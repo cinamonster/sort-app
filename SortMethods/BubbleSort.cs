@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 
 namespace SortApp {
+
 	public class BubbleSort<T> : ISortable<T> where T : IComparable {
+
 		public IList<T> Sort(IList<T> values) {
 			if(values.Count < 2 ) {
 				return values;
